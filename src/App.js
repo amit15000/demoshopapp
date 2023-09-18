@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       Amit Maurya
-      <Item></Item>
+      <Item name="Sumit"/>
+      <Item name="Kumar"/>
+      <Item name="Maurya"/>
     </div>
   );
 }
