@@ -1,9 +1,7 @@
 import React from "react";
-
-function ProductDate() {
-  const today = new Date();
-  const day = today.getDate();
-  return <div>today</div>;
+import "./ProductDate.css";
+function ProductDate(props) {
+  return <div className="name">{props.aajkadin}</div>;
 }
 
 export default ProductDate;
