@@ -2,6 +2,7 @@ import "./App.css";
 import Card from "./components/Card";
 import "./components/Item";
 import Item from "./components/Item";
+import Parent from "./components/Item";
 import ProductDate from "./components/ProductDate";
 
 function App() {
@@ -19,15 +20,18 @@ function App() {
   ];
 
   return (
-    <div className="App">
-      <Card className="cardcss">
+    <div className="child">
+      {/* <Card className="cardcss">
         <div className="Amit">Amit Maurya</div>
         <Item className="i2u" name={response[1].itemName}>
           Am i visible!
         </Item>
         <Item name="Rani"></Item>
-        <ProductDate aajkadin={day}></ProductDate>
-      </Card>
+        <ProductDate a
+        ajkadin={day}></ProductDate>
+      </Card> */}
+
+      <Item className="brother"></Item>
     </div>
   );
 }

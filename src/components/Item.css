@@ -1,12 +1,15 @@
-.name {
-  color: rgb(139, 11, 28);
+.brothery {
+  color: rgb(247, 2, 104);
+  background-color: lightcoral;
+  font-size: 5rem;
 }
-h1 {
-  color: rgb(202, 1, 1);
+.amit {
+  color: rgb(255, 0, 0);
+  background-color: lightcoral;
+  font-size: 1rem;
 }
-.i2u {
-  background-color: red;
-}
-.Amit {
-  color: rgb(123, 255, 16);
+.sumit {
+  color: rgb(201, 2, 228);
+  background-color: lightcoral;
+  font-size: 5rem;
 }

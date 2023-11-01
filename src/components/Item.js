@@ -1,13 +1,13 @@
+import React from "react";
 import "./Item.css";
-function Item(props) {
-  const name = props.name;
-  return (
-    <div>
-      <div className="name">{name}</div>
-      {props.children}
-
-      <h1>I'm h1</h1>
-    </div>
-  );
+function Parent(props) {
+  // return <div className={props.className}>Brothers</div>;
+  // return <div className={`${props.className}`}>Brothers</div>;
+  // return <div className={`${props.className}`}>Brothers</div>;
+  // const classes = "sumit" + props.className;
+  //   const classes = props.className;
+  //   return <div className={`${props.className}`}>Brothers</div>;
+  return <div>Brothers</div>;
 }
-export default Item;
+
+export default Parent;

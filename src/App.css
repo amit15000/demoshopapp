@@ -1,7 +1,17 @@
-.App {
+/* .App {
   text-align: center;
   font-size: 50px;
 }
 .Amit {
   color: rgb(189, 46, 255);
+}
+
+.child {
+  color: blue;
+  background-color: rgb(221, 123, 123);
+} */
+.brother {
+  color: rgb(22, 255, 14);
+  background-color: lightcoral;
+  font-size: 5rem;
 }
