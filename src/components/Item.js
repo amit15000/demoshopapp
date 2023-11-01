@@ -5,6 +5,7 @@ function Item(props) {
     <div>
       <div className="name">{name}</div>
       {props.children}
+
       <h1>I'm h1</h1>
     </div>
   );

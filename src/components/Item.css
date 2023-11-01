@@ -1,6 +1,12 @@
 .name {
-  color: purple;
+  color: rgb(139, 11, 28);
 }
 h1 {
-  color: blue;
+  color: rgb(202, 1, 1);
+}
+.i2u {
+  background-color: red;
+}
+.Amit {
+  color: rgb(123, 255, 16);
 }

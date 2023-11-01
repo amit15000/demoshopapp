@@ -20,9 +20,11 @@ function App() {
 
   return (
     <div className="App">
-      <Card>
+      <Card className="cardcss">
         <div className="Amit">Amit Maurya</div>
-        <Item name={response[1].itemName}>Am i visible!</Item>
+        <Item className="i2u" name={response[1].itemName}>
+          Am i visible!
+        </Item>
         <Item name="Rani"></Item>
         <ProductDate aajkadin={day}></ProductDate>
       </Card>
