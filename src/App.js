@@ -3,11 +3,10 @@ import "./components/Item";
 import Item from "./components/Item";
 function App() {
   return (
-    <div className="App">
-      Amit Maurya
-      <Item name="Geta" />
-      <Item name="Kumar" />
-      <Item name="Maurya" />
+    <div>
+      <Item name="Amit"></Item>
+      <Item name="Sumit"></Item>
+      <Item name="Varsha"></Item>
     </div>
   );
 }
