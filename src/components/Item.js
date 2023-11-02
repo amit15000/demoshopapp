@@ -1,22 +1,60 @@
 import React, { useState } from "react";
 import "./Item.css";
-// function Item(props) {
+
 const Item = (props) => {
-  //   const ItemName = props.name;
-
-  const [ItemName, setTitle] = useState(props.name);
-
-  function clickHandler() {
-    setTitle("Sheetal");
-    console.log("Clicked");
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    age: 0,
+  });
+  function userNameChange(e) {
+    setUser({ ...user, name: e.target.value });
   }
-  return (
-    <div className="name">
-      <span>
-        <h1>{ItemName}</h1>
-      </span>
+  function userEmailChange(e) {
+    setUser({ ...user, email: e.target.value });
+  }
+  function userAgeChange(e) {
+    setUser({ ...user, age: parseInt(e.target.value) });
+  }
 
-      <button onClick={clickHandler}>Add to Card</button>
+  return (
+    <div className="ID">
+      <label>
+        Name:
+        <input
+          type="text"
+          placeholder="Name"
+          value={user.name}
+          onChange={userNameChange}
+        />
+      </label>
+      <br />
+
+      <label>
+        Email:
+        <input
+          type="email"
+          placeholder="Email"
+          value={user.email}
+          onChange={userEmailChange}
+        />
+      </label>
+      <br />
+
+      <label>
+        Age:
+        <input
+          type="number"
+          placeholder="Age"
+          value={user.age}
+          onChange={userAgeChange}
+        />
+      </label>
+      <br />
+      <p>User Info:</p>
+      <p>{user.name}</p>
+      <p>{user.email}</p>
+      <p>{user.age}</p>
     </div>
   );
 };
