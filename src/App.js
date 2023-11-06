@@ -26,9 +26,13 @@ function App() {
 
   //add or remove event Listener
   useEffect(() => {
-    console.log(10);
-    return console.log(12);
-  });
+    //add event listener
+    console.log("listener added");
+    return () => {
+      //remove event listener
+      console.log("listener remove");
+    };
+  }, [data]);
 
   console.log(i++);
 
