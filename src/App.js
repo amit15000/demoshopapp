@@ -1,12 +1,23 @@
+import { useEffect, useState } from "react";
 import "./App.css";
-import "./components/Item";
-import Item from "./components/Item";
+
 function App() {
+  // useEffect(() => {
+  //   console.log("function's body");
+  //   return console.log("function's return");
+  // });
+
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let timer = setTimeout(() => {
+      setCount((count) => count + 1);
+    }, 1000);
+  }, []);
+
   return (
     <div>
-      <Item name="Amit"></Item>
-      <Item name="Sumit"></Item>
-      <Item name="Varsha"></Item>
+      <h1>I've render {count} times.</h1>
     </div>
   );
 }
